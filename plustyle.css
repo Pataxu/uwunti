@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Jost");
 * {
   box-sizing: border-box;
   font-weight: normal;
 }
 
 body {
-  color: #555;
+  color: white;
   background: #222;
   text-align: center;
-  font-family: "Roboto Mono";
+  font-family: "Jost";
   padding: 1em;
 }
 
@@ -16,6 +16,7 @@ h1 {
   font-size: 2.2em;
   vertical-align: text-bottom;
   margin: 0px 0px 0px 0px;
+  color: white;
 }
 
 .flip {
@@ -62,15 +63,30 @@ h1 {
   width: inherit;
   background-size: cover !important;
   background-position: center !important;
-  height: 220px;
-  padding: 1em 2em;
+  height: 225px;
+  padding: 0px 1em;
   background: #313131;
   border-radius: 10px;
 }
 .flip > .front p,
 .flip > .back p {
-  font-size: 0.9125rem;
-  line-height: 160%;
+  font-size: 1.1125rem;
+  line-height: 110%;
   color: #999;
 }
 
+.URL{
+	color: rgb(255, 153, 51);
+	text-decoration:none;
+}
+
+.Engine{
+	font-size: 15px;
+	color: gray;
+}
+
+#Date{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+}
