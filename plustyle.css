@@ -9,12 +9,23 @@ body {
   background: #222;
   text-align: center;
   font-family: "Jost";
-  padding: 1em;
+  padding: 0em;
+  margin: 0px;
+}
+
+div {
+	padding: 0px;
 }
 
 h1 {
   font-size: 2.2em;
   vertical-align: text-bottom;
+  margin: 0px 0px 0px 0px;
+  color: white;
+}
+
+h3{
+  font-size: 2.2em;
   margin: 0px 0px 0px 0px;
   color: white;
 }
@@ -54,7 +65,9 @@ h1 {
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
+  margin-top: 1em;
   width: 370px;
+  max-width: 370px;
 }
 .flip > .front,
 .flip > .back {
@@ -89,4 +102,10 @@ h1 {
 	padding: 0px 0px 0px 0px;
 	margin: 0px 0px 0px 0px;
 	font-size: 15px;
+}
+
+.logo{
+	width: 170px;
+	height: 170px;
+	margin: 10px 0px 0px 0px;
 }
