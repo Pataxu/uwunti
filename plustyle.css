@@ -66,8 +66,9 @@ h3{
   margin-right: 2px;
   margin-bottom: 1em;
   margin-top: 1em;
-  width: 370px;
+  width: 100%;
   max-width: 370px;
+  min-width: 0px;
 }
 .flip > .front,
 .flip > .back {
