@@ -1,120 +1,111 @@
-@font-face { font-family: ubuntu; src: url('ubuntu.tff');
+@import url("https://fonts.googleapis.com/css?family=Jost");
+* {
+  box-sizing: border-box;
+  font-weight: normal;
 }
-
-
 
 body {
-   background: white;
-   text-align: center;
-   font-family: ubuntu;
-   color: rgb(134, 47, 0);
-   background-repeat: no-repeat;
-    background-attachment: fixed;
-	margin: 0;
+  color: white;
+  background: #222;
+  text-align: center;
+  font-family: "Jost";
+  padding: 0em;
+  margin: 0px;
 }
 
-.container{
-	display: block;
-	align-items: center;
-	border: 100px;
-	background-color: #FFF0EC;
-	padding: 5px;
-	margin: 10px;
+div {
+	padding: 0px;
 }
 
+h1 {
+  font-size: 2.2em;
+  vertical-align: text-bottom;
+  margin: 0px 0px 0px 0px;
+  color: white;
+}
 
+h3{
+  font-size: 2.2em;
+  margin: 0px 0px 0px 0px;
+  color: white;
+}
 
+.flip {
+  position: relative;
+}
+.flip > .front,
+.flip > .back {
+  display: block;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 0.8s;
+  transition-property: transform, opacity;
+}
+.flip > .front {
+  transform: rotateY(0deg);
+}
+.flip > .back {
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(-180deg);
+}
+.flip:hover > .front {
+  transform: rotateY(180deg);
+}
+.flip:hover > .back {
+  opacity: 0.9;
+  transform: rotateY(0deg);
+}
 
-.lefty{
-	height: 170px;
+.flip {
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 100%;
+  max-width: 370px;
+  min-width: 0px;
+}
+.flip > .front,
+.flip > .back {
+  display: block;
+  color: white;
+  width: inherit;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 225px;
+  padding: 0px 1em;
+  background: #292828;
+}
+.flip > .front p,
+.flip > .back p {
+  font-size: 1.1125rem;
+  line-height: 110%;
+  color: #999;
+}
+
+.URL{
+	color: rgb(255, 153, 51);
+	text-decoration:none;
+}
+
+.Engine{
+	font-size: 15px;
+	color: gray;
+}
+
+#Date{
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	font-size: 15px;
+}
+
+.logo{
 	width: 170px;
-
-}
-
-.righty{
-	height: 50%;
-	width: 50%;
-}
-
-
-.Imagetext, .GameTitle{
-	margin: 15px 15% 15px 15%;
-	text-align: justify;
-
-	font-size: 20px;
-}
-
-.GameTitle{
-	font-size: 30px;
-	color: rgb(204, 102, 0);
-	text-align: center;
-}
-
-
-h1 img {
-	height: 100px;
-}
-
-
-
-.Button{
-	width: 210px;
-	margin: 5px;
-	target-new:tab;
-}
-
-
-
-.box div{
-	position: fixed;
-	content:url('images/favicon.png');
-	width: 60px;
-	height: 60px;
-	margin:0;
-}
-
-.box div:nth-child(1){
-	top: 80%;
-	left: 0%;
-	animation: animate 10s linear infinite;
-}
-
-.box div:nth-child(2){
-	top: 50%;
-	left: 90%;
-	animation: animate 9s linear infinite;
-}
-
-.box div:nth-child(3){
-	top: 20%;
-	left: 10%;
-	animation: animate 15s linear infinite;
-}
-
-
-/* DUDE, WHAT'S THIS? I MEAN, I'VE JUST COPY AND PASTED THE SAME THING LIKE THREE TIMES AND CHANGED A BIT THE VALUES.
-IS THERE A BETTER AND MORE DYNAMIC WAY TO HANDLE THIS THING? LIKE ARRAYS OR SOMETHING? BECAUSE THIS ISN'T COOL.*/
-
-.box div:nth-child(4){
-	top: 69%;
-	left: 80%;
-	animation: animate 7s linear infinite;
-}
-
-.box div:nth-child(5){
-	top: 10%;
-	left: 20%;
-	animation: animate 15s linear infinite;
-}
-
-@keyframes animate{
-	0%{
-		transform: scale(0) translateY(0);
-		opacity: 0.3;
-	}
-	100%{
-		transform: scale(1.3) translateY(-50px);
-		opacity: 0;
-	}
-	
+	height: 170px;
+	margin: 10px 0px 0px 0px;
 }
