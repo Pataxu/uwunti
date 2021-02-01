@@ -114,3 +114,11 @@ h3{
 	height: 170px;
 	margin: 10px 0px 0px 0px;
 }
+
+footer {
+    clear: both;
+	background-color: #272727;
+
+    margin-top: 1%;
+
+}
