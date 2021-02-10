@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Jost:normal&display=swap");
-* {
-  box-sizing: border-box;
-  font-weight: normal;
-  font-display: swap;
+@font-face {
+  font-family: Jost;
+  src: url(Jost.woff2);
+  display: swap;
+  font-weight: 600;
 }
 
 body {
