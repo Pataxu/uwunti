@@ -35,14 +35,12 @@ h3{
   color: white;
 }
 
-.flip {
-  position: relative;
-}
+
 .flip > .front,
 .flip > .back {
   display: block;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 0.8s;
+  transition-timing-function: cubic-bezier(0.175, 1);
+  transition-duration: 0.4s;
   transition-property: transform, opacity;
 }
 .flip > .front {
@@ -68,7 +66,6 @@ h3{
 .flip {
   position: relative;
   display: inline-block;
-  margin-right: 2px;
   margin-bottom: 1em;
   margin-top: 1em;
   width: 100%;
@@ -83,7 +80,7 @@ h3{
   background-size: cover !important;
   background-position: center !important;
   height: 225px;
-  padding: 0px 1em;
+  padding: 0px 0em;
   background: #292828;
 }
 .flip > .front p,
@@ -91,6 +88,7 @@ h3{
   font-size: 1.1125rem;
   line-height: 110%;
   color: #999;
+  padding: 0px 1em;
 }
 
 .URL{
