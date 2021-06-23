@@ -6,8 +6,8 @@
 }
 
 body {
-  color: white;
-  background: #222;
+  color: black;
+  background: white;
   text-align: center;
   font-family: "Jost";
   padding: 0em;
@@ -19,20 +19,18 @@ div {
 }
 
 .barraBG {
-	background-color: #292828
+	background-color: #EAEAEA
 }
 
 h1 {
   font-size: 2.2em;
   vertical-align: text-bottom;
   margin: 0px 0px 0px 0px;
-  color: white;
 }
 
 h3{
   font-size: 2.2em;
   margin: 0px 0px 0px 0px;
-  color: white;
 }
 
 
@@ -81,7 +79,7 @@ h3{
   background-position: center !important;
   height: 225px;
   padding: 0px 0em;
-  background: #292828;
+  background: white;
 }
 .flip > .front p,
 .flip > .back p {
@@ -115,7 +113,7 @@ h3{
 
 footer {
     clear: both;
-	background-color: #272727;
+	background-color: #EAEAEA;
 
     margin-top: 1%;
 
